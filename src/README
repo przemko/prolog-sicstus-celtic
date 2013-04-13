@@ -1,0 +1,24 @@
+QUICK START
+
+1. Start SICStus Prolog.
+2. Compile source file celtic.pl.
+3. Run goal main.
+4. To finish click on Quit button.
+
+Example session:
+
+$ sicstus
+SICStus 4.1.1 (x86_64-darwin-10.2.0): Tue Dec 15 16:13:48 CET 2009
+Licensed to Przemyslaw Kobylanski on Mac
+| ?- [celtic].
+| ?- main.
+
+MAKE STAND-ALONE EXECUTABLES
+
+1. Run:   make
+
+CLEAN EXECUTABLES AND SAVED STATE
+
+1. Run:   make clean
+
+
