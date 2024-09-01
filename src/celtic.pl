@@ -115,9 +115,7 @@ solve(CON,LS, PS) :-
         tcl_eval(Interp, '.b4  config -state normal', _),
         model(CON,LS, PS, Board, Vars1, Vars2),
         labeling([min], Vars1), % find knotwork
-        write('.'),
         once(labeling([min], Vars2)), % test connectivity
-        nl,
         draw_board(Board),
         tk_next_event(Interp, Event),
         (Event = next -> fail; finito).
